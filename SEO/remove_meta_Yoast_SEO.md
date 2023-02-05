@@ -46,7 +46,7 @@ function joe_remove_yoast_meta( $filter ){
 
 Ниже приведен полный список хуков для мета-тегов которые используются в Yoast:
 
-*Название хука* 	 *Meta Output [# = Dynamic Value]*
+**Название хука** | **Meta Output [# = Dynamic Value]**
 ```html
 wpseo_title 	<title>#</title>
 wpseo_robots 	<meta name="robots" content="#" />
