@@ -1,4 +1,4 @@
-Файл .htaccess
+## Файл .htaccess
 
 // Лимиты WordPress
 ```
@@ -10,4 +10,14 @@ php_value max_execution_time 300
 php_value max_input_time 1000
 
 # END my limit
+```
+```
+// Отключить 'xmlrpc.php' полностью
+# BEGIN disable 'xmlrpc.php' 
+<Files xmlrpc.php>
+Order Allow,Deny
+Deny from all
+</Files>
+
+# END Отключение 'xmlrpc.php' полностью
 ```
