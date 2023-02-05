@@ -34,3 +34,8 @@ Deny from all
 ``` 
 
 С помощью этих правил мы полностью закрываем доступ к файлу.
+
+```php
+// отключение настройки публикации по email start   
+add_filter('enable_post_by_email_configuration', '__return_false');
+```
