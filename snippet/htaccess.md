@@ -14,11 +14,11 @@ php_value max_input_time 1000
 
 Отключить 'xmlrpc.php' полностью
 ```
-# BEGIN disable 'xmlrpc.php' 
+# BEGIN my disable 'xmlrpc.php' 
 <Files xmlrpc.php>
 Order Allow,Deny
 Deny from all
 </Files>
 
-# END disable 'xmlrpc.php'
+# END my disable 'xmlrpc.php'
 ```
