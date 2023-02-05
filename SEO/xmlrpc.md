@@ -41,7 +41,8 @@ Deny from all
 Ссылка wlw manifest – это возможность редактировать и изменять статьи на сайте WordPress при помощи 
 программы Windows Live Writer.
 
-Так выглядит строка мета в коде:
+Так выглядит `link` в коде:
+
 ```html
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://wpcourses.ru/wp-includes/wlwmanifest.xml" />
 ```
