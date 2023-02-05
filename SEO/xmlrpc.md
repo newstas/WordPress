@@ -46,9 +46,8 @@ Deny from all
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://wpcourses.ru/wp-includes/wlwmanifest.xml" />
 ```
 
-Убираем link помощью кода
+Убираем link помощью код: при помощи кода в файле function.php можно отключить вывод wlw manifest.
 
-При помощи кода в файле function.php можно отключить вывод wlw manifest.
 ```php
 remove_action( 'wp_head', 'wlwmanifest_link' );
 
