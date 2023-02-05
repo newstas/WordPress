@@ -35,6 +35,27 @@ Deny from all
 
 С помощью этих правил мы полностью закрываем доступ к файлу.
 
+
+## Удаляем `wlwmanifest` в WordPress
+
+Ссылка wlw manifest – это возможность редактировать и изменять статьи на сайте WordPress при помощи 
+программы Windows Live Writer.
+
+Так выглядит строка мета в коде:
+```html
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://wpcourses.ru/wp-includes/wlwmanifest.xml" />
+```
+
+Убираем link помощью кода
+
+При помощи кода в файле function.php можно отключить вывод wlw manifest.
+```php
+remove_action( 'wp_head', 'wlwmanifest_link' );
+
+
+```
+## Отключение настройки публикации по email
+
 ```php
 // отключение настройки публикации по email start   
 add_filter('enable_post_by_email_configuration', '__return_false');
