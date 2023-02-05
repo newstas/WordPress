@@ -48,7 +48,7 @@ function joe_remove_yoast_meta( $filter ){
 
 *Название хука* 	 *Meta Output [# = Dynamic Value]*
 ```html
-wpseo_title 	<title>#</title>**
+wpseo_title 	<title>#</title>
 wpseo_robots 	<meta name="robots" content="#" />
 wpseo_canonical 	<link rel="canonical" href="#" />
 wpseo_metadesc 	<meta name="description" content="#" />
