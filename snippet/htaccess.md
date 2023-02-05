@@ -12,7 +12,7 @@ php_value max_input_time 1000
 # END my limit
 ```
 
-Отключить 'xmlrpc.php' полностью
+Отключить `xmlrpc.php` полностью
 ```
 # BEGIN my disable 'xmlrpc.php' 
 <Files xmlrpc.php>
