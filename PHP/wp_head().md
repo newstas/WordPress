@@ -96,7 +96,7 @@ remove_action( 'wp_head', 'wp_resource_hints', 2); // Prints resource hints to b
 Также вместе с этим можно удалить REST API
 
 
-##Где используется хук в WordPress
+## Где используется хук в WordPress
 
 ```php
 // wp-activate.php 117
@@ -116,153 +116,154 @@ add_action( 'wp_head', 'wp_strict_cross_origin_referrer' );
 add_action( 'wp_head', '_block_template_viewport_meta_tag', 0 );
 
 //wp-includes/block-template.php 113
+
 remove_action( 'wp_head', '_wp_render_title_tag', 1 ); // Remove conditional title tag rendering...
 
-wp-includes/block-template.php 114
+// wp-includes/block-template.php 114
 
 add_action( 'wp_head', '_block_template_render_title_tag', 1 ); // ...and make it unconditional.
 
-wp-includes/class-wp-admin-bar.php 60
+// wp-includes/class-wp-admin-bar.php 60
 
 add_action( 'wp_head', 'wp_admin_bar_header' );
 
-wp-includes/class-wp-admin-bar.php 77
+// wp-includes/class-wp-admin-bar.php 77
 
 add_action( 'wp_head', $header_callback );
 
-wp-includes/class-wp-customize-manager.php 1933
+// wp-includes/class-wp-customize-manager.php 1933
 
 add_action( 'wp_head', array( $this, 'customize_preview_loading_style' ) );
 
-wp-includes/class-wp-customize-manager.php 1934
+// wp-includes/class-wp-customize-manager.php 1934
 
 add_action( 'wp_head', array( $this, 'remove_frameless_preview_messenger_channel' ) );
 
-wp-includes/default-filters.php 341
+// wp-includes/default-filters.php 341
 
 add_action( 'wp_head', 'wp_custom_css_cb', 101 );
 
-wp-includes/default-filters.php 338
+// wp-includes/default-filters.php 338
 
 add_action( 'wp_head', 'wp_generator' );
 
-wp-includes/default-filters.php 339
+// wp-includes/default-filters.php 339
 
 add_action( 'wp_head', 'rel_canonical' );
 
-wp-includes/default-filters.php 340
+// wp-includes/default-filters.php 340
 
 add_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );
 
-wp-includes/default-filters.php 646
+// wp-includes/default-filters.php 646
 
 add_action( 'wp_head', 'wp_oembed_add_host_js' ); // Back-compat for sites disabling oEmbed host JS by removing action.
 
-wp-includes/default-filters.php 342
+// wp-includes/default-filters.php 342
 
 add_action( 'wp_head', 'wp_site_icon', 99 );
 
-wp-includes/default-filters.php 457
+// wp-includes/default-filters.php 457
 
 add_action( 'wp_head', 'wp_post_preview_js', 1 );
 
-wp-includes/default-filters.php 520
+// wp-includes/default-filters.php 520
 
 add_action( 'wp_head', '_custom_logo_header_styles' );
 
-wp-includes/default-filters.php 591
+// wp-includes/default-filters.php 591
 
 add_action( 'wp_head', 'wp_maybe_inline_styles', 1 ); // Run for styles enqueued in <head>.
 
-wp-includes/default-filters.php 645
+// wp-includes/default-filters.php 645
 
 add_action( 'wp_head', 'wp_oembed_add_discovery_links' );
 
-wp-includes/default-filters.php 337
+// wp-includes/default-filters.php 337
 
 add_action( 'wp_head', 'wp_print_head_scripts', 9 );
 
-wp-includes/default-filters.php 335
+// wp-includes/default-filters.php 335
 
 add_action( 'wp_head', 'print_emoji_detection_script', 7 );
 
-wp-includes/default-filters.php 336
+// wp-includes/default-filters.php 336
 
 add_action( 'wp_head', 'wp_print_styles', 8 );
 
-wp-includes/default-filters.php 327
+// wp-includes/default-filters.php 327
 
 add_action( 'wp_head', 'wp_preload_resources', 1 );
 
-wp-includes/default-filters.php 311
+// wp-includes/default-filters.php 311
 
 add_action( 'wp_head', 'rest_output_link_wp_head', 10, 0 );
 
-wp-includes/default-filters.php 334
+// wp-includes/default-filters.php 334
 
 add_action( 'wp_head', 'wp_robots', 1 );
 
-wp-includes/default-filters.php 325
+// wp-includes/default-filters.php 325
 
 add_action( 'wp_head', 'wp_enqueue_scripts', 1 );
 
-wp-includes/default-filters.php 326
+// wp-includes/default-filters.php 326
 
 add_action( 'wp_head', 'wp_resource_hints', 2 );
 
-wp-includes/default-filters.php 324
+// wp-includes/default-filters.php 324
 
 add_action( 'wp_head', '_wp_render_title_tag', 1 );
 
-wp-includes/default-filters.php 328
+// wp-includes/default-filters.php 328
 
 add_action( 'wp_head', 'feed_links', 2 );
 
-wp-includes/default-filters.php 329
+// wp-includes/default-filters.php 329
 
 add_action( 'wp_head', 'feed_links_extra', 3 );
 
-wp-includes/default-filters.php 330
+// wp-includes/default-filters.php 330
 
 add_action( 'wp_head', 'rsd_link' );
 
-wp-includes/default-filters.php 331
+// wp-includes/default-filters.php 331
 
 add_action( 'wp_head', 'wlwmanifest_link' );
 
-wp-includes/default-filters.php 332
+// wp-includes/default-filters.php 332
 
 add_action( 'wp_head', 'locale_stylesheet' );
 
-wp-includes/deprecated.php 2405
+// wp-includes/deprecated.php 2405
 
 remove_action( 'wp_head', 'feed_links_extra', 3 ); // Just do this yourself in 3.0+.
 
-wp-includes/theme.php 2858
+// wp-includes/theme.php 2858
 
 add_action( 'wp_head', $args[0]['wp-head-callback'] );
 
-wp-includes/theme.php 2872
+// wp-includes/theme.php 2872
 
 add_action( 'wp_head', $args[0]['wp-head-callback'] );
 
-wp-includes/theme.php 3013
+// wp-includes/theme.php 3013
 
 remove_action( 'wp_head', $support[0]['wp-head-callback'] );
 
-wp-includes/theme.php 3027
+// wp-includes/theme.php 3027
 
 remove_action( 'wp_head', $support[0]['wp-head-callback'] );
 
-wp-includes/widgets/class-wp-widget-recent-comments.php 35
+// wp-includes/widgets/class-wp-widget-recent-comments.php 35
 
 add_action( 'wp_head', array( $this, 'recent_comments_style' ) );
 
-wp-signup.php 30
+// wp-signup.php 30
 
 add_action( 'wp_head', 'do_signup_header' );
 
-wp-signup.php 87
+// wp-signup.php 87
 
 add_action( 'wp_head', 'wpmu_signup_stylesheet' );
 
