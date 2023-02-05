@@ -84,6 +84,6 @@ remove_action( 'wp_head', 'wp_shortlink_wp_head', 10 );// Короткая сс�
 
 // 4.6
 remove_action( 'wp_head', 'wp_resource_hints', 2); // Prints resource hints to browsers for pre-fetching, pre-rendering and pre-connecting to web sites.
-
+```
 
 Также вместе с этим можно удалить REST API
