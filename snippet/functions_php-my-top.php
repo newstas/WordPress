@@ -8,7 +8,7 @@ remove_action( 'wp_head', 'feed_links_extra', 3 );
 remove_action( 'wp_head', 'rsd_link');
 // <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://example.com/wp-includes/wlwmanifest.xml" /> . Используется клиентом Windows Live Writer.
 remove_action( 'wp_head', 'wlwmanifest_link');
-// Убираем версию WordPress
+// Убираем версию WordPress <meta name="generator" content="WordPress 6.1.1" />
 add_filter('the_generator', '__return_empty_string');
 // 3.0
 // Короткая ссылка - без ЧПУ <link rel='shortlink'
