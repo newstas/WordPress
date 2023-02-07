@@ -89,10 +89,10 @@ add_action('do_feed_atom',          'fb_disable_feed', 1);
 remove_action( 'wp_head',           'rsd_link' ); 
 
 // Удаляет ссылку Windows для Live Writer
-remove_action( 'wp_head',           'wlwmanifest_link' ); 
+remove_action( 'wp_head',           'wlwmanifest_link' );  // Используется блог-клиентами, а вернее лишь одним из них - Windows Live Writer
 
 // Удаляет короткую ссылку
-remove_action( 'wp_head',           'wp_shortlink_wp_head', 10, 0); 
+remove_action( 'wp_head',           'wp_shortlink_wp_head', 10, 0); // Убирает короткую ссылку к текущей странице
 remove_action( 'template_redirect', 'wp_shortlink_header', 11, 0 );
 
 // Удаляет информацию о версии WordPress
@@ -115,8 +115,7 @@ remove_action( 'wp_head',  'wp_resource_hints', 2 ); // убираем meta rel=
 remove_action('wp_head', 'rel_canonical'); // Убирает канонические линки
 
 
-remove_action('wp_head', 'wp_shortlink_wp_head'); // Убирает короткую ссылку к текущей странице
-remove_action('wp_head', 'wlwmanifest_link'); // Используется блог-клиентами, а вернее лишь одним из них - Windows Live Writer. Не используете WLW - удаляйте.
+
 remove_action('wp_head', 'rsd_link'); // Используется различными блог-клиентами или веб-сервисами для публикации/изменения записей в блоге.
 remove_action('wp_head', 'pagenavi_css'); // Убирает вывод лишнего css изи плагина WP-PageNavi
 remove_action('wp_head', 'index_rel_link'); // Убирает ссылку на главную страницу
