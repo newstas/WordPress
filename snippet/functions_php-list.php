@@ -2,18 +2,51 @@
 
 
 // ОТКЛЮЧЕНИЕ ЛИШНИХ ФУНКЦИЙ
-// Удаление параметра ver из добавляемых скриптов и стилей
-function rem_wp_ver_css_js($src) {
+/* --------------------------------------------------------------------------
+ * Удаляем лишнее из шапки
+ * -------------------------------------------------------------------------- */
+// Удаляет информацию о версии WordPress
+remove_action( 'wp_head',           'wp_generator' ); // Убирает вывод используемого движка и его версии
 
-	if (strpos( $src, 'ver=' )) {
-		$src = remove_query_arg( 'ver', $src );
-	}
+// Убирает канонические линки
+remove_action('wp_head',            'rel_canonical');
 
-	return $src;
+// Убирает вывод лишнего css изи плагина WP-PageNavi
+remove_action('wp_head',            'pagenavi_css'); 
+
+// Удаляет RSD ссылку для удаленной публикации
+remove_action( 'wp_head',           'rsd_link' ); // Используется различными блог-клиентами или веб-сервисами для публикации/изменения записей в блоге
+
+// Удаляет ссылку Windows для Live Writer
+remove_action( 'wp_head',           'wlwmanifest_link' );  // Используется блог-клиентами, а вернее лишь одним из них - Windows Live Writer
+
+// Удаляет короткую ссылку
+remove_action( 'wp_head',           'wp_shortlink_wp_head', 10, 0); // Убирает короткую ссылку к текущей странице
+remove_action( 'template_redirect', 'wp_shortlink_header', 11, 0 );
+
+// Удаляет ссылки на предыдущую и следующую статьи
+remove_action( 'wp_head',           'adjacent_posts_rel_link', 10, 0 ); // Убирает ссылку на следующую запись
+remove_action( 'wp_head',           'adjacent_posts_rel_link_wp_head', 10, 0 ); // Убирает связь с родительской записью
+remove_action( 'wp_head',           'index_rel_link' ); // Убирает ссылку на главную страницу
+remove_action( 'wp_head',           'start_post_rel_link', 10, 0 ); // Убирает ссылку на первую запись
+remove_action( 'wp_head',           'parent_post_rel_link', 10, 0 ); // Убирает ссылку на предыдущую запись
+
+// Удаляем dns prefetch
+remove_action( 'wp_head',  'wp_resource_hints', 2 ); // убираем meta rel='dns-prefetch' href='//s.w.org'
+
+// Удаляет ссылки RSS-лент записи и комментариев
+remove_action( 'wp_head',           'feed_links', 2 ); // Формально если запретить данное действие, то в блоге не должны выводиться ссылки на основную ленту RSS и на RSS ленту комментариев. А на практике это работать не будет, так как функция wp_head не выводит эти самые ссылки на RSS ленты записей и комментариев, их вывод должен осуществляться вручную в файле header.php
+// Удаляет ссылки RSS-лент категорий и архивов
+remove_action( 'wp_head',           'feed_links_extra', 3 ); // Запрещаем вывод RSS фида для записей, тегов, рубрик и т.д. Таким образом, мы запрещаем создавать такие фиды, но тем не менее, они будут доступны, если добавить /feed в конец урла
+// Отключаем RSS канал
+function fb_disable_feed() {
+	wp_redirect(get_option('siteurl'));
 }
-
-add_filter( 'style_loader_src',  'rem_wp_ver_css_js', 9999 );
-add_filter( 'script_loader_src', 'rem_wp_ver_css_js', 9999 );
+add_action('do_feed',               'fb_disable_feed', 1);
+add_action('do_feed_rdf',           'fb_disable_feed', 1);
+add_action('do_feed_rss',           'fb_disable_feed', 1);
+add_action('do_feed_rss2',          'fb_disable_feed', 1);
+add_action('do_feed_atom',          'fb_disable_feed', 1);
 
 /* --------------------------------------------------------------------------
  * Отключаем REST API
@@ -67,54 +100,18 @@ function disable_wp_emojis_in_tinymce( $plugins ) {
 }
 
 /* --------------------------------------------------------------------------
- * Удаляем лишнее из шапки
+ * Удаление параметра ver из добавляемых скриптов и стилей
  * -------------------------------------------------------------------------- */
+function rem_wp_ver_css_js($src) {
 
-// Удаляет ссылки RSS-лент записи и комментариев
-remove_action( 'wp_head',          'feed_links', 2 ); / Формально если запретить данное действие, то в блоге не должны выводиться ссылки на основную ленту RSS и на RSS ленту комментариев. А на практике это работать не будет, так как функция wp_head не выводит эти самые ссылки на RSS ленты записей и комментариев, их вывод должен осуществляться вручную в файле header.php
-// Удаляет ссылки RSS-лент категорий и архивов
-remove_action( 'wp_head',          'feed_links_extra', 3 ); // Запрещаем вывод RSS фида для записей, тегов, рубрик и т.д. Таким образом, мы запрещаем создавать такие фиды, но тем не менее, они будут доступны, если добавить /feed в конец урла
+	if (strpos( $src, 'ver=' )) {
+		$src = remove_query_arg( 'ver', $src );
+	}
 
-// Отключаем RSS канал
-function fb_disable_feed() {
-	wp_redirect(get_option('siteurl'));
+	return $src;
 }
-add_action('do_feed',               'fb_disable_feed', 1);
-add_action('do_feed_rdf',           'fb_disable_feed', 1);
-add_action('do_feed_rss',           'fb_disable_feed', 1);
-add_action('do_feed_rss2',          'fb_disable_feed', 1);
-add_action('do_feed_atom',          'fb_disable_feed', 1);
 
-// Удаляет RSD ссылку для удаленной публикации
-remove_action( 'wp_head',           'rsd_link' ); // Используется различными блог-клиентами или веб-сервисами для публикации/изменения записей в блоге
+add_filter( 'style_loader_src',  'rem_wp_ver_css_js', 9999 );
+add_filter( 'script_loader_src', 'rem_wp_ver_css_js', 9999 );
 
-// Удаляет ссылку Windows для Live Writer
-remove_action( 'wp_head',           'wlwmanifest_link' );  // Используется блог-клиентами, а вернее лишь одним из них - Windows Live Writer
-
-// Удаляет короткую ссылку
-remove_action( 'wp_head',           'wp_shortlink_wp_head', 10, 0); // Убирает короткую ссылку к текущей странице
-remove_action( 'template_redirect', 'wp_shortlink_header', 11, 0 );
-
-// Удаляет информацию о версии WordPress
-remove_action( 'wp_head',           'wp_generator' ); // Убирает вывод используемого движка и его версии
-
-// Удаляет ссылки на предыдущую и следующую статьи
-remove_action( 'wp_head',           'adjacent_posts_rel_link', 10, 0 ); // Убирает ссылку на следующую запись
-remove_action( 'wp_head',           'adjacent_posts_rel_link_wp_head', 10, 0 ); // Убирает связь с родительской записью
-remove_action( 'wp_head',           'index_rel_link' ); // Убирает ссылку на главную страницу
-remove_action( 'wp_head',           'start_post_rel_link', 10, 0 ); // Убирает ссылку на первую запись
-remove_action( 'wp_head',           'parent_post_rel_link', 10, 0 ); // Убирает ссылку на предыдущую запись
-
-// Удаляем dns prefetch
-remove_action( 'wp_head',  'wp_resource_hints', 2 ); // убираем meta rel='dns-prefetch' href='//s.w.org'
-
-
-/* --------------------------------------------------------------------------
- * Еще примеры
- * -------------------------------------------------------------------------- */
-remove_action('wp_head', 'rel_canonical'); // Убирает канонические линки
-remove_action('wp_head', 'pagenavi_css'); // Убирает вывод лишнего css изи плагина WP-PageNavi
-
-
-//
 
