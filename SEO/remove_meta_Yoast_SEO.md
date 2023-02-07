@@ -48,25 +48,26 @@ function joe_remove_yoast_meta( $filter ){
 
 **Название хука** | **Meta Output [# = Dynamic Value]**
 ```html
-wpseo_title 	<title>#</title>
-wpseo_robots 	<meta name="robots" content="#" />
-wpseo_canonical 	<link rel="canonical" href="#" />
-wpseo_metadesc 	<meta name="description" content="#" />
-wpseo_metakeywords 	<meta name="keywords" content="#" />
-wpseo_locale 	<meta property="og:locale" content="#" />
-wpseo_opengraph_title 	<meta property="og:title" content="#" />
-wpseo_opengraph_desc 	<meta property="og:description" content="#" />
-wpseo_opengraph_url 	<meta property="og:url" content="#" />
-wpseo_opengraph_type 	<meta property="og:type" content="website" />
-wpseo_opengraph_site_name 	<meta property="og:site_name" content="#" />
-wpseo_opengraph_admin 	<meta property="fb:admins" content="#" />
+wpseo_title 	                        <title>#</title>
+wpseo_robots 	                        <meta name="robots" content="#" />
+wpseo_canonical 	                <link rel="canonical" href="#" />
+wpseo_metadesc 	                        <meta name="description" content="#" />
+wpseo_metakeywords 	                <meta name="keywords" content="#" />
+wpseo_locale 	                        <meta property="og:locale" content="#" />
+wpseo_opengraph_title 	                <meta property="og:title" content="#" />
+wpseo_opengraph_desc 	                <meta property="og:description" content="#" />
+wpseo_opengraph_url 	                <meta property="og:url" content="#" />
+wpseo_opengraph_type 	                <meta property="og:type" content="website" />
+wpseo_opengraph_site_name 	        <meta property="og:site_name" content="#" />
+wpseo_opengraph_admin 	                <meta property="fb:admins" content="#" />
 wpseo_opengraph_author_facebook 	<meta property="article:author" content="#" />
 wpseo_opengraph_show_publish_date 	<meta property="article:published_time" content="#" />
-wpseo_twitter_title 	<meta name="twitter:title" content="#" />
-wpseo_twitter_description 	<meta name="twitter:description" content="#" />
-wpseo_twitter_card_type 	<meta name="twitter:card" content="#" />
-wpseo_twitter_site 	<meta name="twitter:site" content="#" />
-wpseo_twitter_image 	<meta name="twitter:image" content="#" />
-wpseo_twitter_creator_account 	<meta name="twitter:creator" content="#" />
-wpseo_json_ld_output 	<script type="application/ld+json">#<script/>
+wpseo_twitter_title 	                <meta name="twitter:title" content="#" />
+wpseo_twitter_description 	        <meta name="twitter:description" content="#" />
+wpseo_twitter_card_type 	        <meta name="twitter:card" content="#" />
+wpseo_twitter_site 	                <meta name="twitter:site" content="#" />
+wpseo_twitter_image 	                <meta name="twitter:image" content="#" />
+wpseo_twitter_creator_account 	        <meta name="twitter:creator" content="#" />
+wpseo_json_ld_output 	                <script type="application/ld+json">#<script/>
 ```
+
