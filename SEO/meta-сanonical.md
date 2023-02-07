@@ -1,4 +1,4 @@
-# Метатег `сanonical`
+# Мета-тег `сanonical`
 
 ```html
 <link rel="canonical" href="my.com">
