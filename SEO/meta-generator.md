@@ -9,4 +9,24 @@
 add_filter('the_generator', '__return_empty_string');
 ```
 
+# Скрываем версию WordPress из RSS-ленты и из wp_head()
+
+
+Если вы загляните в свою RSS-ленту в виде XML, например через Google Chrome, то найдёте в ней эту строчку:
+
+<generator>http://wordpress.org/?v=3.3.1</generator>
+
+А теперь открываем исходный код сайта Ctrl + U в браузере и видим там:
+
+<meta name="generator" content="WordPress 3.3.1" />
+
+Я не вижу смысла выставлять версию своего движка напоказ, поэтому просто суём эти несколько строк кода в файл functions.php:
+
+function remove_wp_version() {
+	return '';
+}
+add_filter('the_generator', 'remove_wp_version');
+
+P.S. Также не забудьте удалить файл readme.html, ведь он тоже содержит версию WordPress, находится в корневой директории.
+
 
