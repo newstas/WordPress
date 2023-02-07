@@ -135,14 +135,3 @@ remove_action('admin_print_styles',  'print_emoji_styles');
 // Код ниже избавляет от wp-json и oembed
 add_filter('rest_enabled', '__return_false'); // Отключаем сам REST API
 
-// Отключаем фильтры REST API
-remove_action( 'xmlrpc_rsd_apis',            'rest_output_rsd' );
-remove_action( 'wp_head',                    'rest_output_link_wp_head', 10, 0 );
-remove_action( 'template_redirect',          'rest_output_link_header', 11, 0 );
-remove_action( 'auth_cookie_malformed',      'rest_cookie_collect_status' );
-remove_action( 'auth_cookie_expired',        'rest_cookie_collect_status' );
-remove_action( 'auth_cookie_bad_username',   'rest_cookie_collect_status' );
-remove_action( 'auth_cookie_bad_hash',       'rest_cookie_collect_status' );
-remove_action( 'auth_cookie_valid',          'rest_cookie_collect_status' );
-remove_filter( 'rest_authentication_errors', 'rest_cookie_check_errors', 100 );
-
