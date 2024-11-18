@@ -9,7 +9,11 @@
 ```
 // Файл русификации должен быть расположен по адресу:
 
-public_html/wp-content/languages/loco/plugins/cooked-ru_RU.po
+wp-content/languages/loco/themes/***-ru.po
+
+// Оригинальный шаблон перевода
+
+wp-content/themes/***/languages/***.pot
 ```
 
 > Если в оригинальной фразе стоят специальные символы, скопируйте их и в точности вставьте в русский вариант.
