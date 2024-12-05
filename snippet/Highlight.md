@@ -41,3 +41,17 @@ greeting="Добро пожаловать в мир bash скриптов!"
 echo $greeting
 
 ```
+
+Проба:
+
+{% vscode %}
+This content is specific to Visual Studio Code.
+{% endvscode %}
+
+{% visualstudio %}
+This content is specific to Visual Studio.
+{% endvisualstudio %}
+
+{% jetbrains %}
+This content is specific to JetBrains IDEs.
+{% endjetbrains %}
