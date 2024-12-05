@@ -53,6 +53,17 @@ echo $greeting
 Октиконы — это набор значков SVG, созданных GitHub для GitHub. [Primer Octicons](https://github.com/primer/octicons/tree/main)
 
 
+## Руководство по стилю
+
+[Руководство по стилю](https://docs.github.com/ru/contributing/style-guide-and-content-model/style-guide#links-to-a-specific-tool)
+
+
+### Пример использования кнопки копирования 
+
+```javascript copy
+const copyMe = true
+```
+
 ### Списки
 
 1. Under your repository name, click **Actions**.
