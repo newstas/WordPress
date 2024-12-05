@@ -79,3 +79,6 @@ Inline text
 
 {% octicon "markdown" aria-label="Add file" %}
 
+"{% octicon "plus" aria-hidden="true" %} Add message")
+
+
