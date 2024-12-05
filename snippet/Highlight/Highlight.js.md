@@ -15,6 +15,8 @@ SUPPORTED LANGUAGES
 
 [Комментарии для Highlight.js](https://github.com/github/docs/blob/main/data/code-languages.yml)
 
+[Вложение файлов](https://docs.github.com/ru/get-started/writing-on-github/working-with-advanced-formatting/attaching-files)
+
 
 ## Примеры
 
@@ -117,6 +119,23 @@ const copyMe = true
 <svg width="100" height="100">
   <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
 </svg>
+
+<details>
+
+<summary>Tips for collapsed sections</summary>
+
+### You can add a header
+
+You can add text within a collapsed section. 
+
+You can add an image or a code block, too.
+
+```ruby
+   puts "Hello World"
+```
+
+</details>
+
 
 
 
