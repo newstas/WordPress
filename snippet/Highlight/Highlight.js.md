@@ -86,4 +86,5 @@ Inline text
 
 octicons.x.keywords
 
-
+var octicons = require("@primer/octicons")
+octicons.alert
