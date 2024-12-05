@@ -9,6 +9,12 @@ Highlight.js — популярная библиотека для подсвет
 SUPPORTED LANGUAGES
 </code></pre>
 ```
+[Поддерживаемые языки Highlight.js | Supported Languages](https://github.com/highlightjs/highlight.js/blob/main/SUPPORTED_LANGUAGES.md)
+
+[Репозиторий Highlight.js](https://github.com/highlightjs/highlight.js/tree/main)
+
+[Комментарии для Highlight.js](https://github.com/github/docs/blob/main/data/code-languages.yml)
+
 
 ## Примеры
 
