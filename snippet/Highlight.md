@@ -10,7 +10,7 @@ Highlight.js — популярная библиотека для подсвет
 </code></pre>
 
 Вставка кода с помощью синтаксиса MD в GitHub:
-...python
+```python
 def greet(name): 
     print(f"Hello, {name}!")
-...
+```
