@@ -65,6 +65,8 @@ echo $greeting
 
 [Руководство по стилю](https://docs.github.com/ru/contributing/style-guide-and-content-model/style-guide#links-to-a-specific-tool)
 
+[Использование Markdown и Liquid в документации GitHub](https://docs.github.com/ru/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs)
+
 
 ### Пример использования кнопки копирования 
 
