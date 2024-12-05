@@ -6,7 +6,7 @@ Highlight.js — популярная библиотека для подсвет
 
 Вставка кода в HTML языка Python:
 ```html
-/<pre/><code class="language-python"> def greet(name): 
+/<pre><code class="language-python"> def greet(name): 
     print(f"Hello, {name}!") 
 </code></pre>
 ```
