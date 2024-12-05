@@ -63,7 +63,7 @@ This content is specific to JetBrains IDEs.
 
    This is another paragraph in the list.
 
-3. This is the next item.
+1. This is the next item.
 
 
 > [!NOTE]
