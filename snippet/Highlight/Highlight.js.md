@@ -90,5 +90,21 @@ const copyMe = true
 
 <a href="https://github.com/DESTINATION/URL?ref_cta=CTA+NAME&ref_loc=LOCATION&ref_page=docs" target="_blank" class="btn btn-primary mt-3 mr-3 no-underline"><span>Try PRODUCT NAME</span> {% octicon "link-external" height:16 %}</a>
 
+Внутренние ссылки с AUTOTITLE
+
+При ссылке на другую страницу документов GitHub используйте стандартный синтаксис Markdown, например `[]()`, 
+но введите `AUTOTITLE` вместо заголовка страницы. Приложение GitHub Docs заменит AUTOTITLE с заголовком связанной 
+страницы во время рендеринга. Это специальное ключевое слово чувствительно к регистру, поэтому будьте осторожны 
+при вводе, иначе замена не сработает.
+
+Пример использования внутренних ссылок с AUTOTITLE
+
+- `For more information, see "[AUTOTITLE](/path/to/page)."`
+- `For more information, see "[AUTOTITLE](/path/to/page#section-link)."`
+- `For more information, see the TOOLNAME documentation in "[AUTOTITLE](/path/to/page?tool=TOOLNAME)."`
+
+> [!ПРИМЕЧАНИЕ]
+>Ссылки на разделы на одной странице не работают с этим ключевым словом. Вместо этого введите полный текст заголовка. 
+
 
 
