@@ -73,3 +73,5 @@ This content is specific to JetBrains IDEs.
 
 {% octicon markdown height:16 %}
 
+Inline text
+
