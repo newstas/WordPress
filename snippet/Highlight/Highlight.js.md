@@ -75,3 +75,7 @@ This content is specific to JetBrains IDEs.
 
 Inline text
 
+{% octicon "plus" aria-label="Add file" %}
+
+{% octicon "markdown" aria-label="Add file" %}
+
