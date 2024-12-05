@@ -55,3 +55,12 @@ This content is specific to Visual Studio.
 {% jetbrains %}
 This content is specific to JetBrains IDEs.
 {% endjetbrains %}
+
+
+1. Under your repository name, click **Actions**.
+
+   ![Screenshot of the tabs for the "github/docs" repository. The "Actions" tab is highlighted with an orange outline.](/assets/images/help/repository/actions-tab-global-nav-update.png)
+
+   This is another paragraph in the list.
+
+1. This is the next item.
