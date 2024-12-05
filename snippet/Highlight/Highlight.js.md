@@ -58,9 +58,13 @@ This content is specific to JetBrains IDEs.
 
 
 1. Under your repository name, click **Actions**.
-
    ![Screenshot of the tabs for the "github/docs" repository. The "Actions" tab is highlighted with an orange outline.](/assets/images/help/repository/actions-tab-global-nav-update.png)
-
    This is another paragraph in the list.
+2. This is the next item.
 
-1. This is the next item.
+
+> [!NOTE]
+> Generally alerts should be short.
+>
+> But occasionally may require more than one paragraph
+
