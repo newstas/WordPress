@@ -42,6 +42,8 @@ echo $greeting
 
 ```
 
+Октиконы — это набор значков SVG, созданных GitHub для GitHub. 
+
 Проба:
 
 {% vscode %}
