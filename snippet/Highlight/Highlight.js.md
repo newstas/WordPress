@@ -72,6 +72,8 @@ echo $greeting
 
 [Использование Markdown и Liquid в документации GitHub](https://docs.github.com/ru/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs)
 
+[Руководство по оформлению Markdown файлов | ru](https://gist.github.com/Jekins/2bf2d0638163f1294637)
+
 
 ### Пример использования кнопки копирования 
 
@@ -151,6 +153,18 @@ You can add an image or a code block, too.
 ```
 
 </details>
+
+### Комментарии
+
+Вы можете вставить комментарии в свой markdown-файл, которые не будут отображаться в окончательном отформатированном виде:
+
+```
+[//]: # (Это комментарий, он не будет отображаться)
+```
+
+Пример:
+
+[//]: # (Это комментарий, он не будет отображаться)
 
 
 
