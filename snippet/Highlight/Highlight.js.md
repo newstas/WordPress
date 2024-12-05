@@ -1,3 +1,8 @@
+title: About your personal dashboard
+versions:
+  fpt: '*'
+  ghes: '>=2.20'
+
 # Highlight.js
 
 Highlight.js — популярная библиотека для подсветки синтаксиса, которая поддерживает более 1
