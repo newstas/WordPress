@@ -88,3 +88,5 @@ octicons.x.keywords
 
 var octicons = require("@primer/octicons")
 octicons.alert
+
+octicons.x.toSVG()
