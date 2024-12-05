@@ -10,6 +10,8 @@ SUPPORTED LANGUAGES
 </code></pre>
 ```
 
+## Примеры
+
 Вставка кода в HTML языка Python через библиотеку Highlight.js (здесь не подключена библиотека Highlight.js, 
 поэтому вставной код Python не подсвечивается):
 
@@ -48,22 +50,10 @@ echo $greeting
 
 ```
 
-Октиконы — это набор значков SVG, созданных GitHub для GitHub. 
+Октиконы — это набор значков SVG, созданных GitHub для GitHub. [Primer Octicons](https://github.com/primer/octicons/tree/main)
 
-Проба:
 
-{% vscode %}
-This content is specific to Visual Studio Code.
-{% endvscode %}
-
-{% visualstudio %}
-This content is specific to Visual Studio.
-{% endvisualstudio %}
-
-{% jetbrains %}
-This content is specific to JetBrains IDEs.
-{% endjetbrains %}
-
+### Списки
 
 1. Under your repository name, click **Actions**.
 
@@ -73,28 +63,11 @@ This content is specific to JetBrains IDEs.
 
 1. This is the next item.
 
+### Предуреждения
 
 > [!NOTE]
 > Generally alerts should be short.
 >
 > But occasionally may require more than one paragraph
 
-{% octicon markdown height:16 %}
 
-Inline text
-
-```
-{% octicon "plus" aria-label="Add file" %}
-```
-
-{% octicon "markdown" aria-label="Add file" %}
-
-"{% octicon "plus" aria-hidden="true" %} Add message")
-
-
-octicons.x.keywords
-
-var octicons = require("@primer/octicons")
-octicons.alert
-
-octicons.x.toSVG()
