@@ -103,7 +103,7 @@ const copyMe = true
 - `For more information, see "[AUTOTITLE](/path/to/page#section-link)."`
 - `For more information, see the TOOLNAME documentation in "[AUTOTITLE](/path/to/page?tool=TOOLNAME)."`
 
-> [!ПРИМЕЧАНИЕ]
+> [!NOTE]
 > Ссылки на разделы на одной странице не работают с этим ключевым словом. Вместо этого введите полный текст заголовка. 
 
 
