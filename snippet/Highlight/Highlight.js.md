@@ -58,9 +58,12 @@ This content is specific to JetBrains IDEs.
 
 
 1. Under your repository name, click **Actions**.
-   ![Screenshot of the tabs for the "github/docs" repository. The "Actions" tab is highlighted with an orange outline.](/assets/images/help/repository/actions-tab-global-nav-update.png)
+
+   ![Screenshot of the tabs for the "github/docs" repository. The "Actions" tab is highlighted with an orange outline.](https://docs.github.com/assets/cb-12958/mw-1440/images/help/repository/actions-tab-global-nav-update.webp)
+
    This is another paragraph in the list.
-2. This is the next item.
+
+3. This is the next item.
 
 
 > [!NOTE]
