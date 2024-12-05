@@ -60,11 +60,11 @@ echo $greeting
 
 ### Пример использования кнопки копирования 
 
-```md
+<pre>
 ```javascript copy
 const copyMe = true
 ```
-```
+</pre>
 
 ```javascript copy
 const copyMe = true
