@@ -11,7 +11,7 @@ Highlight.js — популярная библиотека для подсвет
 
 ```html copy
 <pre><code class="language-LANGUAGES">
-SUPPORTED LANGUAGES
+CODE
 </code></pre>
 ```
 [Поддерживаемые языки Highlight.js | Supported Languages](https://github.com/highlightjs/highlight.js/blob/main/SUPPORTED_LANGUAGES.md)
