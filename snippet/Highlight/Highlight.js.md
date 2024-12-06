@@ -74,6 +74,8 @@ echo $greeting
 
 [Руководство по оформлению Markdown файлов | ru](https://gist.github.com/Jekins/2bf2d0638163f1294637)
 
+[Content - ?](https://github.com/github/docs/blob/main/content/README.md#versions)
+
 
 ### Пример использования кнопки копирования 
 
