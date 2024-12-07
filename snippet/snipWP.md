@@ -11,3 +11,17 @@ CODE
 ```
 
 </details>
+
+<details>
+
+<summary>Добавление кода HTTP</summary>
+
+### Блок кода HTTP
+
+```
+<pre><code class="language-http">
+CODE
+</code></pre>
+```
+
+</details>
