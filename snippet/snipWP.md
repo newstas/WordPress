@@ -5,6 +5,9 @@
 CODE
 </code></pre>
 ```
+```html
+<code class="language-LANGUAGES">
+```
 [Поддерживаемые языки Highlight.js](https://github.com/highlightjs/highlight.js/blob/main/SUPPORTED_LANGUAGES.md)
 
 <details>
