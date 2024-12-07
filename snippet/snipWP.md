@@ -1,3 +1,12 @@
+# Highlight.js
+
+```html copy
+<pre><code class="language-LANGUAGES">
+CODE
+</code></pre>
+```
+[Поддерживаемые языки Highlight.js](https://github.com/highlightjs/highlight.js/blob/main/SUPPORTED_LANGUAGES.md)
+
 <details>
 
 <summary>Добавление кода PHP</summary>
