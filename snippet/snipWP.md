@@ -1,11 +1,11 @@
 <details>
 
-<summary>Добавление кода</summary>
+<summary>Добавление кода PHP</summary>
 
-### Добавлнеие любого кода
+### Блок кода PHP
 
 ```
-<pre><code class="language-LANGUAGES">
+<pre><code class="language-php">
 CODE
 </code></pre>
 ```
