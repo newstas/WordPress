@@ -2,9 +2,9 @@
 
 ## Category: Security Headers от Really Simple SSL
 
-(Category: Security Headers)(https://really-simple-ssl.com/security-headers/)
+[Category: Security Headers](https://really-simple-ssl.com/security-headers/)
 
-(Protecting site visitors with Security Headers - Защита посетителей сайта с помощью заголовков безопасности)(https://really-simple-ssl.com/protecting-site-visitors-with-security-headers/)
+[Protecting site visitors with Security Headers - Защита посетителей сайта с помощью заголовков безопасности](https://really-simple-ssl.com/protecting-site-visitors-with-security-headers/)
 
 [What are Recommended Security Headers? | Что такое рекомендуемые заголовки безопасности?](https://really-simple-ssl.com/definition/about-recommended-security-headers/)
 
@@ -58,6 +58,25 @@ Apache и Litespeed
 
 *В некоторых конфигурациях возможно, что .htaccess не доступен для прямой записи. На панели Really Simple SSL появится ошибка. Вы можете решить эту проблему, прочитав эту статью . Если вы следовали этой статье, перезагрузите панель управления, и уведомление должно исчезнуть.
 
+## Что такое рекомендуемые заголовки безопасности?
+
+Рекомендуемые заголовки безопасности — это заголовки безопасности, которые мы рекомендуем устанавливать на каждом веб-сайте. 
+Эти заголовки повысят безопасность посетителей вашего сайта, не нарушая его функциональность. Большинство этих заголовков 
+будут включены автоматически при активации Really Simple SSL Pro. Исключением является заголовок HTST, поскольку браузеры 
+запоминают этот параметр, и его нельзя эффективно отключить без последствий, поэтому мы оставляем возможность включения 
+этого заголовка на ваше усмотрение.
+
+В настоящее время мы рекомендуем следующие заголовки безопасности почти для всех* веб-сайтов: 
+```
+    HSTS                     ->     max-age=63072000; includeSubDomains; preload
+    X-Content-Type-Options   ->     nosniff
+    X-XSS-Protection         ->     0
+    X-Frame-Options          ->     SAMEORIGIN
+    Referrer-Policy          ->     strict-origin-when-cross-origin
+    Content-Security-Policy  ->     upgrade-insecure-requests
+```
+* = Могут быть очень специфические обстоятельства, когда рекомендуемый заголовок безопасности потребуется изменить для поддержки функциональности вашего веб-сайта. Вы можете изменить настройки Really Simple SSL по умолчанию в настройках
+* 
 
 ## Добавление рекомендуемых заголовков безопасности вручную в WordPress
 
