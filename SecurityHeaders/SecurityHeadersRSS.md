@@ -30,6 +30,10 @@ Inserting HSTS header using PHP
 
 HSTS: HTTP Strict Transport Security, and why it’s good to have it
 
+[Усиление безопасности вашего сайта. Настнойка блока "Усилине" | Hardening your website’s security](https://really-simple-ssl.com/hardening-your-websites-security/#basic-file-editors)
+
+
+
 ## Расположение заголовков безопасности
 
 По сути, есть три места, где можно установить заголовки безопасности для вашего веб-сайта WordPress, и последний установленный заголовок является активным. Порядок установки заголовков следующий:
