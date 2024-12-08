@@ -6,11 +6,13 @@
 
 (Protecting site visitors with Security Headers - Защита посетителей сайта с помощью заголовков безопасности)(https://really-simple-ssl.com/protecting-site-visitors-with-security-headers/)
 
+[What are Recommended Security Headers? | Что такое рекомендуемые заголовки безопасности?](https://really-simple-ssl.com/definition/about-recommended-security-headers/)
+
 [Configuring recommended Security Headers | Настройка рекомендуемых заголовков безопасности](https://really-simple-ssl.com/instructions/about-recommended-security-headers/)
 
 [Manually adding recommended security headers on WordPress | Добавление рекомендуемых заголовков безопасности вручную в WordPress](https://really-simple-ssl.com/site-health-recommended-security-headers/)
 
-]What are Frame Ancestors? | Что такое Frame Ancestors?](https://really-simple-ssl.com/definition/what-are-frame-ancestors/)
+[What are Frame Ancestors? | Что такое Frame Ancestors?](https://really-simple-ssl.com/definition/what-are-frame-ancestors/)
 
 W3 Total Cache and Security Headers
 
