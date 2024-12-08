@@ -84,7 +84,7 @@ Apache и Litespeed
 
 ```
 # Really Simple SSL
-Header always set Strict-Transport-Security: "max-age=31536000" env=HTTPS 
+Header always set Strict-Transport-Security: max-age=63072000; includeSubDomains; preload 
 # End Really Simple SSL
 ```
 
