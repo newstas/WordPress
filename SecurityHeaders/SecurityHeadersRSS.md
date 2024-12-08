@@ -16,9 +16,9 @@
 
 W3 Total Cache and Security Headers
 
-How to set Security Headers on Apache and NGINX
+[How to set Security Headers on Apache and NGINX | Как установить заголовки безопасности в Apache и NGINX](https://really-simple-ssl.com/how-to-find-where-security-headers-are-set/)
 
-How to find where (unwanted) security headers are set
+[How to find where (unwanted) security headers are set | Как узнать, где установлены (нежелательные) заголовки безопасности](https://really-simple-ssl.com/how-to-find-where-security-headers-are-set/}
 
 How to use the Permission Policy header
 
