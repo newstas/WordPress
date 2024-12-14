@@ -1,6 +1,5 @@
 # Краткий справочник по заголовкам безопасности
 
-SecurityHeaders/img/mdn-url-protocol@x2.png
-img/mdn-url-protocol@x2.png
+Схема или протокол (Scheme & Protocol)
 
 ![Иллюстрация к проекту](/img/mdn-url-protocol@x2.png)
