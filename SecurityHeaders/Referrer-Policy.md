@@ -22,7 +22,7 @@
 картинку, если запрос приходит с другого сайта (а, например, показывают маленькое изображение-заглушку). 
 
 
-## Origin (источник)
+## Origin (источник / исход)
 
 Заголовок запроса `Origin` показывает откуда будет производиться загрузка. Он не включает в себя какую-либо 
 информацию о пути, содержит в себе лишь имя сервера (протокол, имя хоста, номер порта. Заголовок отправляется 
@@ -37,6 +37,61 @@
 Origin: ""
 Origin: <протокол> "://" <имя_хоста> [ ":" <порт> ]
 ```
+
+## Что такое Origin (источник), Path (путь) и Query String (строка запроса)
+
+Исходя из предоставленной информации, давайте разберем ключевые понятия:
+
+### Origin (источник)
+
+Исход - это базовая часть URL, включающая схему протокола, доменное имя и порт. Например, 
+для URL https://www.example.com:8080/path/to/page исход будет https://www.example.com:8080.
+
+### Путь (Path)
+
+Путь - это часть URL, которая следует после имени хоста и перед именем файла. Он определяет структуру каталогов 
+на сервере, где находится запрашиваемый ресурс. Например, в URL https://www.example.com/path/to/page путь будет /path/to/.
+
+### Строка запроса (Query String)
+
+Строка запроса - это часть URL после символа вопроса (?), которая содержит параметры и их значения. Она используется 
+для передачи дополнительной информации от клиента к серверу. Например, 
+в URL https://www.example.com/search?q=web+development строка запроса будет q=web+development.
+
+### Примеры использования:
+
+1. Полный URL: https://www.example.com/path/to/page?param=value
+   - Исход: https://www.example.com
+   - Путь: /path/to/
+   - Строка запроса: ?param=value
+
+2. Кросс-оригинальный запрос:
+   https://api.another-site.com/data?user_id=123
+   - Исход: https://api.another-site.com
+   - Путь: /data
+   - Строка запроса: ?user_id=123
+
+3. Запрос с одного источника:
+https://www.example.com/script.js?v=1.0
+   - Исход: https://www.example.com
+   - Путь: /script.js
+   - Строка запроса: ?v=1.0
+
+Эти компоненты часто используются при настройке политик реферера и определении, какая информация должна быть 
+отправлена вместе с HTTP-запросом.
+
+Citations:
+[1](https://habr.com/ru/companies/avito/articles/710660/)
+[2](https://mhost.by/blog/article/11/http-zaprosy-metody-i-protokol-peredachi-giperteksta)
+[3](https://evmservice.ru/blog/metody-get-i-post/)
+[4](https://www.adogy.com/ru/terms/%D0%A1%D1%82%D1%80%D0%BE%D0%BA%D0%B0-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B0/)
+[5](https://ru.wikipedia.org/wiki/HTTP)
+[6](https://worksolutions.ru/blog/zaprosy-parsing-hranenie-vse-chto-nuzhno-znat-o-rabote-s-dannymi-vo-frontend-prilozhenii/)
+[7](https://www.cleverence.ru/articles/elektronnaya-kommertsiya/rest-api-chto-eto-takoe-prostymi-slovami-primery-zaprosov-varianty-ispolzovaniya-servisa-metody/)
+[8](https://iit-web-lectures.readthedocs.io/ru/latest/www/http.html)
+[9](https://www.securitylab.ru/analytics/489752.php?R=1)
+[10](https://infostart.ru/1c/articles/516810/)
+
 
 ## Существует несколько уровней ограничения для отправки информации о реферере. Вот основные из них:
 
@@ -130,4 +185,56 @@ Citations:
 [8](https://www.vpnunlimited.com/help/cybersecurity/referrer-policy?srsltid=AfmBOorz_B9Fr5jTbsjH-9v_4SxCFCkl7cs5RPwq_MIuGpJNGuVfxSRY)
 [9](https://www.softforge.co.uk/blogs/all-topics/the-referrer-policy-security-header-history-purpose-and-implementation)
 [10](https://sigmaos.com/tips/glossary/browser-terms-explained-referrer-policy)
+
+
+## Как я могу проверить текущие настройки политики рефералов?
+
+Использование инструментов разработчика
+
+1. Откройте инструменты разработчика вашего браузера (обычно F12 или Ctrl+Shift+I).
+
+2. Перейдите на вкладку «Сеть».
+
+3. Перезагрузите страницу.
+
+4. Найдите запрос на текущей странице и нажмите на него.
+
+5. Найдите заголовок «Политика реферера» в разделе «Заголовки».
+
+### Использование JavaScript
+
+Вы можете использовать следующую команду JavaScript в консоли:
+```js
+document.referrerPolicy
+```
+Это вернет текущую политику реферера в виде строки. 
+
+### Проверка определенных элементов
+
+Для отдельных элементов, таких как ссылки или изображения, вы можете проверить их и найти r`eferrerpolicy` атрибут.
+Использование онлайн-инструментов
+
+1. Посетите Securityheaders.com и введите URL-адрес сайта, который вы хотите проверить.
+
+2. Он проанализирует заголовки сайта и отобразит политику реферера вместе с другими заголовками безопасности.
+
+### Ключевые моменты:
+
+- Разные браузеры могут отображать политику реферера в своих инструментах разработчика немного по-разному.
+- Некоторые старые браузеры могут не отображать политику реферера явно.
+- Политика по умолчанию варьируется в зависимости от браузера, при этом большинство современных браузеров используют
+`strict-origin-when-cross-origin`.
+
+### Лучшие практики:
+
+- Регулярно просматривайте и обновляйте свою политику рефералов с учетом ваших потребностей в безопасности.
+- Рассмотрите возможность использования `strict-origin-when-cross-origin` как хороший баланс между безопасностью и функциональностью.
+- Имейте в виду, что изменение политики рефералов может повлиять на взаимодействие сторонних служб с вашим сайтом.
+
+Помните, что точный метод проверки политики реферера может незначительно отличаться в зависимости от версии вашего браузера и операционной системы. 
+
+[phind](https://www.phind.com/search?cache=h71zdc81r8b4ojlgew8nots3)
+
+
+
 
