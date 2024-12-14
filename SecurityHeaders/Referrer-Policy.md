@@ -44,8 +44,8 @@ Origin: <протокол> "://" <имя_хоста> [ ":" <порт> ]
 
 ### Origin (источник)
 
-Исход - это базовая часть URL, включающая схему протокола, доменное имя и порт. Например, 
-для URL https://www.example.com:8080/path/to/page исход будет https://www.example.com:8080.
+Origin (источник) - это базовая часть URL, включающая схему протокола, доменное имя и порт. Например, 
+для URL https://www.example.com:8080/path/to/page Origin будет https://www.example.com:8080.
 
 ### Путь (Path)
 
