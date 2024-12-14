@@ -80,17 +80,7 @@ https://www.example.com/script.js?v=1.0
 Эти компоненты часто используются при настройке политик реферера и определении, какая информация должна быть 
 отправлена вместе с HTTP-запросом.
 
-Citations:
-[1](https://habr.com/ru/companies/avito/articles/710660/)
-[2](https://mhost.by/blog/article/11/http-zaprosy-metody-i-protokol-peredachi-giperteksta)
-[3](https://evmservice.ru/blog/metody-get-i-post/)
-[4](https://www.adogy.com/ru/terms/%D0%A1%D1%82%D1%80%D0%BE%D0%BA%D0%B0-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B0/)
-[5](https://ru.wikipedia.org/wiki/HTTP)
-[6](https://worksolutions.ru/blog/zaprosy-parsing-hranenie-vse-chto-nuzhno-znat-o-rabote-s-dannymi-vo-frontend-prilozhenii/)
-[7](https://www.cleverence.ru/articles/elektronnaya-kommertsiya/rest-api-chto-eto-takoe-prostymi-slovami-primery-zaprosov-varianty-ispolzovaniya-servisa-metody/)
-[8](https://iit-web-lectures.readthedocs.io/ru/latest/www/http.html)
-[9](https://www.securitylab.ru/analytics/489752.php?R=1)
-[10](https://infostart.ru/1c/articles/516810/)
+[phind[(https://www.phind.com/search?cache=h71zdc81r8b4ojlgew8nots3)
 
 
 ## Существует несколько уровней ограничения для отправки информации о реферере. Вот основные из них:
@@ -174,17 +164,9 @@ Citations:
 Каждый из этих уровней предоставляет разные уровни защиты приватности и функциональности. 
 Выбор зависит от конкретных требований безопасности и функциональности вашего сайта.
 
-Citations:
-[1](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy)
-[2](https://web.dev/articles/referrer-best-practices)
-[3](https://www.w3.org/TR/referrer-policy/)
-[4](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Referrer_policy)
-[5](https://probely.com/vulnerabilities/insecure-referrer-policy/)
-[6](https://http.dev/referrer-policy)
-[7](https://www.malcare.com/blog/referrer-policy-wordpress/)
-[8](https://www.vpnunlimited.com/help/cybersecurity/referrer-policy?srsltid=AfmBOorz_B9Fr5jTbsjH-9v_4SxCFCkl7cs5RPwq_MIuGpJNGuVfxSRY)
-[9](https://www.softforge.co.uk/blogs/all-topics/the-referrer-policy-security-header-history-purpose-and-implementation)
-[10](https://sigmaos.com/tips/glossary/browser-terms-explained-referrer-policy)
+https://www.phind.com/search?cache=h71zdc81r8b4ojlgew8nots3
+
+[phind](https://www.phind.com/search?cache=h71zdc81r8b4ojlgew8nots3}
 
 
 ## Как я могу проверить текущие настройки политики рефералов?
