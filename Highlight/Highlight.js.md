@@ -230,7 +230,7 @@ HTML метод (рекомендуется)
 ```md
 ![Описание изображения](https://picsite.photo-01 "Текст под изображением")
 ```
-Или же в HTML ты можешь задать атрибут &lt;figcaption&lg; внутри &lt;figure&lg;:
+Или же в HTML ты можешь задать атрибут &lt;figcaption&gt; внутри &lt;figure&gt;:
 ```HTML
 <figure>
   <img src="https://picsite.photo-01" alt="Описание изображения">
