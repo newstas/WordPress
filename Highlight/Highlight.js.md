@@ -169,5 +169,14 @@ You can add an image or a code block, too.
 [//]: # (Это комментарий, он не будет отображаться)
 
 
+## Изображения
+
+```md
+![Описание изображения](https://picsum.photos/800/600)
+```
+
+```html
+<image src="https://picsum.photos/800/600" alt="Описание изображения">
+```
 
 
