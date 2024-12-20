@@ -16,7 +16,7 @@ ID номеров или других параметров в адресной �
 Основными преимуществами использования шифрования URL-адресов считается повышение общей безопасности сайта: защита от фишинговых атак, 
 попыток SQL-инъекций, заражения вредоносным ПО и т. д. 
 
-<img src="[https://picsite.photo-01](https://github.com/newstas/WordPress/blob/42876b60a2b601373485cd6e6fa8704aec1ffbe9/img/URLshifr).jpg" alt="URL-шифрование" width="200">
+<img src="[https://picsite.photo-01](https://github.com/newstas/WordPress/blob/42876b60a2b601373485cd6e6fa8704aec1ffbe9/img/URLshifr).jpg" alt="URL-шифрование" width="500" height="300">
 
 ![](https://github.com/newstas/WordPress/blob/42876b60a2b601373485cd6e6fa8704aec1ffbe9/img/URLshifr =200)
 
