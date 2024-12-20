@@ -9,6 +9,12 @@
 [Content - ?](https://github.com/github/docs/blob/main/content/README.md#versions)
 
 
+[Работа с расширенным форматированием](https://docs.github.com/ru/get-started/writing-on-github/working-with-advanced-formatting}
+
+Такие способы форматирования, как таблицы, выделение синтаксиса и автоматическое связывание, позволяют 
+четко упорядочивать сложную информацию в запросах на вытягивание, сообщениях о проблемах и комментариях.
+
+
 ### Пример использования кнопки копирования 
 
 <pre>
