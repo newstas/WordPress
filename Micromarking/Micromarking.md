@@ -148,6 +148,25 @@ Microdata — синтаксис (словарь Schema.org чаще всего 
 - `itemtype` — указывает на тип сущности
 - `itemprop` — обозначает свойства сущности
 
+Пример, размеченный в синтаксисе микроданных с использованием словаря Schema.org: 
+```html
+<div itemscope itemtype="http://schema.org/Person">
+  <span itemprop="name">Юрий Гагарин</span>
+  <img src="gagarin.jpg" itemprop="image"/>
+  <span itemprop="jobTitle">Летчик-космонавт</span>
+  <span itemprop="colleague">Валентина Терешкова</span>
+  <link itemprop="nationality" href="http://ru.wikipedia.org/wiki/Россия">Россия
+  <time itemprop="birthDate" datetime="1934-03-09">9 марта 1934</time>
+  <span itemprop="memberOf">Военно-воздушные силы СССР</span>
+  <span itemprop="knows">Сергей Королев</span>
+  <time itemprop="deathDate" datetime="1968-03-27">27 марта 1968</time>
+  <span itemprop="award">Герой Советского союза</span>
+  <a href="http://ru.wikipedia.org/wiki/Гагарин,_Юрий_Алексеевич" itemprop="sameAs">Страница на Википедии</a>
+  <a href="http://example.com/Гагарин" itemprop="url">Сайт Юрия Гагарина</a>
+ </div>
+```
+
+
 
 ## JSON-LD
 
