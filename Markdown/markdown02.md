@@ -1,5 +1,7 @@
 ## Руководство по стилю
 
+[Базовый синтаксис записи и форматирования](https://docs.github.com/ru/enterprise-cloud@latest/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
 [Руководство по стилю](https://docs.github.com/ru/contributing/style-guide-and-content-model/style-guide#links-to-a-specific-tool)
 
 [Использование Markdown и Liquid в документации GitHub](https://docs.github.com/ru/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs)
