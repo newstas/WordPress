@@ -10,8 +10,9 @@
 
 [Content - ?](https://github.com/github/docs/blob/main/content/README.md#versions)
 
-
 [Работа с расширенным форматированием](https://docs.github.com/ru/get-started/writing-on-github/working-with-advanced-formatting)
+
+[Keyboard HTML Tag для Github Markdown](https://gist.github.com/RebeccaWhit3/dae70f3e781c355133e8d58b46e9a988)
 
 Такие способы форматирования, как таблицы, выделение синтаксиса и автоматическое связывание, позволяют 
 четко упорядочивать сложную информацию в запросах на вытягивание, сообщениях о проблемах и комментариях.
