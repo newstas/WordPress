@@ -5,13 +5,15 @@
 ```
 # BEGIN my limit
 php_value memory_limit 256M
-php_value upload_max_filesize 512M
-php_value post_max_size 260M
+php_value upload_max_filesize 256M
+php_value post_max_size 256M
 php_value max_execution_time 300
 php_value max_input_time 1000
 
 # END my limit
 ```
+
+### Ограничения ресурсов
 
 ### memory_limit
 
@@ -26,6 +28,22 @@ php_value max_input_time 1000
 **Allowed memory size of ... bytes exhausted** (Допустимый размер памяти ... байт исчерпан):
 > Fatal error: **Allowed memory size of 33554432 bytes exhausted (tried to allocate 2348617 bytes) in
 > /home4/xxx/public_html/wp-includes/plugin.phpon line xxx**
+
+### upload_max_filesize
+
+`upload_max_filesize` – редактирование этого параметра позволяет загружать большие медиафайлы и увеличивать лимит.  `post_max_size` 
+должен быть больше, чем это значение. 
+
+### post_max_size
+
+`post_max_size` – если ваши записи в блоге содержат много изображений и видео, то размер записи увеличится. Чтобы избежать ошибок, 
+вы можете увеличить post_max_size, чтобы разместить более обширные статьи.
+
+Устанавливает максимально допустимый размер данных, отправляемых методом POST. Это значение также влияет на загрузку файлов. 
+Для загрузки больших файлов это значение должно быть больше значения директивы `upload_max_filesize`. В сущности, `memory_limit` должна 
+быть больше чем `post_max_size`. Объём измеряется в байтах, если значение параметра указали как целое число (int). 
+
+### Конфигурация времени выполнения
 
 ### max_execution_time
 
