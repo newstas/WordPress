@@ -13,6 +13,16 @@ php_value max_input_time 1000
 # END my limit
 ```
 
+Максимальные загрузки и лимиты памяти PHP для WordPress
+```
+php_value   upload_max_filesize   1000M 
+php_value   post_max_size   2000M 
+php_value   ограничение_памяти   3000M 
+php_value   max_execution_time   1000 
+php_value   max_input_time   1000 
+php_value   max_input_vars   9000
+```
+
 ### Ограничения ресурсов
 
 ### memory_limit
@@ -33,6 +43,14 @@ php_value max_input_time 1000
 
 `upload_max_filesize` – редактирование этого параметра позволяет загружать большие медиафайлы и увеличивать лимит.  `post_max_size` 
 должен быть больше, чем это значение. 
+
+Возможная ошибка при загрузки темы:
+
+> The uploaded file exceeds the upload_max_filesize directive in php.ini (Загруженный файл превышает директиву upload_max_filesize в php.ini)
+
+Возможная ошибка при загрузке изображения:
+
+> ...exceeds the maximum upload size for this site (превышает максимальный размер загрузки для этого сайта)
 
 ### post_max_size
 
