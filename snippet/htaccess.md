@@ -1,7 +1,6 @@
 # Файл .htaccess
 
-
-## Лимиты WordPress на 2025 год
+## Лимиты WordPress (2025)
 
 ```
 # BEGIN my limit
