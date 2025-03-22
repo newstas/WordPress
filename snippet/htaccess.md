@@ -2,6 +2,7 @@
 
 ## Лимиты WordPress (2025)
 
+Настройки от [presscustomizr](https://docs.presscustomizr.com/article/171-fixing-maximum-upload-and-php-memory-limit-issues)
 ```
 # BEGIN my limit
 php_value memory_limit 256M
