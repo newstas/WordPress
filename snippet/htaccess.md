@@ -11,6 +11,9 @@ php_value max_input_time 1000
 
 # END my limit
 ```
+`max_execution_time` – это время, необходимое для запуска команд и выполнения скриптов. Необходимо увеличить для загрузки больших файлов на сервре.
+> Fatal error: Allowed memory size of 33554432 bytes exhausted (tried to allocate 2348617 bytes) in /home4/xxx/public_html/wp-includes/plugin.php
+> on line xxx
 
 Отключить `xmlrpc.php` полностью
 ```
