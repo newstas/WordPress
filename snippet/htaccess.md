@@ -12,11 +12,14 @@ php_value max_input_time 1000
 
 # END my limit
 ```
+
+В случае нехватки памяти, если вашему коду WordPress требуется больше, чем выделено памяти по умолчанию, вы увидите следующее сообщение об ошибке: 
+**Allowed memory size of ... bytes exhausted** (Допустимый размер памяти ... байт исчерпан):
+> Fatal error: **Allowed memory size of 33554432 bytes exhausted (tried to allocate 2348617 bytes) in
+> /home4/xxx/public_html/wp-includes/plugin.phpon line xxx**
+
 `max_execution_time` (максимальное_время_выполнения) – конфигурация тайм-аута (Timeout), это время, необходимое для запуска 
 команд и выполнения скриптов. Необходимо увеличить, если вы загружаете большие файлы на сервер.
-В случае нехватки выдает ошибку **Allowed memory size of ... bytes exhausted** (Допустимый размер памяти ... байт исчерпан):
-> Fatal error: **Allowed memory size of 33554432 bytes exhausted (tried to allocate 2348617 bytes) in /home4/xxx/public_html/wp-includes/plugin.php
-> on line xxx**
 
 Максимальное время в секундах, которое разрешено скрипту запустить до того, как он будет завершен парсером. Это помогает
 предотвратить загрузку сервера плохо написанными скриптами. настройка по умолчанию: `30`. Apache имеет директиву Timeout, а IIS имеет 
