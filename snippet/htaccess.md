@@ -11,7 +11,6 @@ php_value max_execution_time 300
 php_value max_input_time 1000
 ```
 
-
 ```
 # BEGIN my limit
 php_value memory_limit 256M
@@ -31,6 +30,17 @@ php_value   ограничение_памяти   3000M
 php_value   max_execution_time   1000 
 php_value   max_input_time   1000 
 php_value   max_input_vars   9000
+```
+
+## Файл php.ini
+
+PHP использует представленные здесь значения по умолчанию, только если не подключили файл php.ini;
+```
+memory_limit 	"128M"
+post_max_size 	"8M"
+max_input_vars 	1000 	 
+upload_max_filesize 	"2M" 		 
+max_file_uploads 	20
 ```
 
 ### Ограничения ресурсов
@@ -121,7 +131,7 @@ php_value   max_input_vars   9000
 `64`/`128`/`192`/`256`/`384`/`512`/`1024` M
 
 
-## Отключить `xmlrpc.php` полностью
+# Отключить `xmlrpc.php` полностью
 
 ```
 # BEGIN my disable 'xmlrpc.php' 
