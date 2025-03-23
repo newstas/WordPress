@@ -4,6 +4,15 @@
 
 Настройки от [presscustomizr](https://docs.presscustomizr.com/article/171-fixing-maximum-upload-and-php-memory-limit-issues)
 ```
+php_value memory_limit 256M
+php_value upload_max_filesize 64M
+php_value post_max_size 64M
+php_value max_execution_time 300
+php_value max_input_time 1000
+```
+
+
+```
 # BEGIN my limit
 php_value memory_limit 256M
 php_value upload_max_filesize 256M
@@ -90,7 +99,11 @@ php_value   max_input_vars   9000
 
 `max_input_vars` — сколько входных переменных может быть принято (ограничение применяется к суперглобальным $_GET, $_POST и $_COOKIE по 
 отдельности). Использование этой директивы снижает вероятность атак типа «отказ в обслуживании», использующих коллизии хэшей. Если входных 
-переменных больше, чем указано в этой директиве, выдается E_WARNING, и дальнейшие входные переменные отсекаются из запроса.
+переменных больше, чем указано в этой директиве, выдается E_WARNING, и дальнейшие входные переменные отсекаются из запроса.)
+
+### max_file_uploads (факультативно)
+
+`max_file_uploads` — максимально разрешённое количество одновременно закачиваемых файлов. Пустые поля загрузки не рассматриваются этим ограничением.
 
 ### PHP-директивы принимают сокращённые байтовые значения
 
