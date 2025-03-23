@@ -22,25 +22,42 @@ php_value max_input_time 1000
 # END my limit
 ```
 
-Максимальные загрузки и лимиты памяти PHP для WordPress
+**Максимальные** загрузки и лимиты памяти PHP для WordPress
 ```
+php_value   memory_limit          3000M 
 php_value   upload_max_filesize   1000M 
-php_value   post_max_size   2000M 
-php_value   ограничение_памяти   3000M 
-php_value   max_execution_time   1000 
-php_value   max_input_time   1000 
-php_value   max_input_vars   9000
+php_value   post_max_size         2000M 
+php_value   max_execution_time    1000 
+php_value   max_input_time        1000 
+php_value   max_input_vars        9000
 ```
 
 ## Файл php.ini
 
-PHP использует представленные здесь значения по умолчанию, только если не подключили файл php.ini;
+Настройки от [presscustomizr](https://docs.presscustomizr.com/article/171-fixing-maximum-upload-and-php-memory-limit-issues)
 ```
-memory_limit 	"128M"
-post_max_size 	"8M"
-max_input_vars 	1000 	 
-upload_max_filesize 	"2M" 		 
-max_file_uploads 	20
+memory_limit = 256M
+upload_max_filesize = 64M
+upload_max_size = 64M
+post_max_size = 64M
+max_execution_time = 300
+max_input_time = 1000
+```
+
+PHP использует представленные здесь значения **по умолчанию**, только если не подключили файл php.ini:
+```
+memory_limit =          128M
+upload_max_filesize =   2M 	
+post_max_size =         8M
+max_input_vars =        1000 	 	 
+max_file_uploads =      20
+```
+
+## Файл wp-config.php
+
+Вставьте следующий код в конец файла:
+```
+define('WP_MEMORY_LIMIT', '256M');
 ```
 
 ### Ограничения ресурсов
@@ -86,7 +103,9 @@ max_file_uploads 	20
 ### max_execution_time в Core
 
 `max_execution_time` (максимальное_время_выполнения) – конфигурация тайм-аута (Timeout), это время, необходимое для запуска 
-команд и выполнения скриптов. Необходимо увеличить, если вы загружаете большие файлы на сервер.
+команд и выполнения скриптов. Необходимо увеличить, если вы загружаете большие файлы на сервер. 
+
+> Директива `max_execution_time` влияет только на время выполнения самого скрипта. 
 
 Максимальное время в секундах, которое разрешено скрипту запустить до того, как он будет завершен парсером. Это помогает
 предотвратить загрузку сервера плохо написанными скриптами. настройка по умолчанию: `30`. Apache имеет директиву Timeout, а IIS имеет 
@@ -104,6 +123,9 @@ max_file_uploads 	20
 такие как POST и GET. Отсчет времени начинается с момента PHP вызывается на сервере и завершается с началом выполнения. 
 Значение по умолчанию `-1` означает, что вместо этого используется `max_execution_time.` Установите значение `0`, чтобы разрешить 
 неограниченное время.
+
+> Директива `max_input_time` устанавливает максимальное время в секундах, в течение которого скрипту разрешается получать входные данные;
+время загрузки файла тоже включается.
 
 ### max_input_vars (факультативно) в Core
 
