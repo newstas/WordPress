@@ -14,7 +14,8 @@
 
 Полезные
 
-9. Remove Footer Credit
+9. Maintenance
+10. Remove Footer Credit
 12. Inline Related Posts
 13. Broken Link Checker
 14. Redirection
