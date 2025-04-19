@@ -15,7 +15,6 @@
 Полезные
 
 9. Remove Footer Credit
-11. Site Kit от Google
 12. Inline Related Posts
 13. Broken Link Checker
 14. Redirection
